@@ -149,10 +149,14 @@ main .options .controls button:hover {
   font-weight: 400;
 }
 .add-transaction-panel label {
-  margin-top: 2em;
+  margin-top: 1em;
   margin-bottom: 0.2em;
-  font-size: 1.2em;
+  font-size: 1.8em;
   font-weight: bold;
+}
+.add-transaction-panel small {
+  font-size: 1.5em;
+  text-align: center;
 }
 .add-transaction-panel input,
 .add-transaction-panel select {
