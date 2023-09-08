@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My virtual wallet</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/27a4d9211e.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+	<header>
+		<h1>My virtual wallet <i class="fa-solid fa-dollar-sign"></i></h1>
+	</header>
+	<main>
+		<section class="transactions">
+			<h2 class="title">Transactions</h2>
+			<div class="transaction-list">
+
+				<div class="earnings-area">
+					<h3>My earnings</h3>
+					<div id="0" class="transaction">
+						<p class="transaction-item">Salary</p>
+						<p class="transaction-amount">27000 PLN <button class="delete"><i
+									class="fa-solid fa-trash-can"></i></button></p>
+					</div>
+				</div>
+
+				<div class="expenditure-area">
+					<h3>My expenditure</h3>
+					<div id="1" class="transaction">
+						<p class="transaction-item">Clothes shopping<i class="fa-solid fa-shirt"></i></p>
+						<p class="transaction-amount">- 500 PLN <button class="delete"><i
+									class="fa-solid fa-trash-can"></i></button></p>
+					</div>
+					<div id="2" class="transaction">
+						<p class="transaction-item">Food<i class="fa-solid fa-utensils"></i></p>
+						<p class="transaction-amount">- 1000 PLN <button class="delete"><i
+									class="fa-solid fa-trash-can"></i></button></p>
+					</div>
+					<div id="3" class="transaction">
+						<p class="transaction-item">Cosmetics<i class="fa-solid fa-spa"></i></p>
+						<p class="transaction-amount">- 300 PLN <button class="delete"><i
+									class="fa-solid fa-trash-can"></i></button></p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<section class="options">
+			<div>
+				<h3 class="title">Available funds</h3>
+				<p class="available-money">0 PLN</p>
+			</div>
+			<div class="controls">
+				<button class="add-transaction"><i class="fa-solid fa-plus"></i>Dodaj transakcję</button>
+				<button class="delete-transactions"><i class="fa-solid fa-trash-can"></i>Usuń</button>
+			</div>
+		</section>
+	</main>
+	<div class="add-transaction-panel">
+		<h2 class="title">Add a new transaction</h2>
+		<label for="name">Name</label>
+		<small>(Enter a transaction name)</small>
+		<input id="name" type="text">
+		<label for="name">Amount</label>
+		<small>Enter the amount - remember about the minus if it's an expense</small>
+		<input id="amount" type="number">
+		<label for="category">Categoty</label>
+		<small>(+) earnings (-) expenditure</small>
+
+		<select id="category">
+			<option value="none" selected disabled></option>
+			<option value="earnings">(+) Earnings</option>
+			<option value="shopping">(-) Shopping</option>
+			<option value="food">(-) Food</option>
+			<option value="cosmetics">(-) Cosmetics</option>
+		</select>
+
+		<div class="panel-buttons">
+			<button class="save">Save</button>
+			<button class="cancel">Cancel</button>
+		</div>
+	</div>
+	<script src="./script.js"></script>
+</body>
+
+</html>
